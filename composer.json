@@ -38,7 +38,10 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.7.3",
     "oscarotero/env": "^1.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "lkwdwrd/wp-muplugin-loader": "~1.0.0",
+    "wp-papi/papi": "dev-master",
+    "wpackagist-plugin/polylang": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
@@ -49,11 +52,17 @@
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
-    "wordpress-install-dir": "web/wp"
+    "wordpress-install-dir": "web/wp",
+    "force-mu": [
+      "polylang",
+      "wp-papi/papi"
+    ]
   },
   "scripts": {
-    "test": [
-      "vendor/bin/phpcs"
-    ]
+    "remove-muloader": [
+      "if [ -f web/app/mu-plugins/mu-require.php ]; then rm -rf web/app/mu-plugins/mu-require.php; fi"
+    ],
+    "post-install-cmd": "@remove-muloader",
+    "post-update-cmd":  "@remove-muloader"
   }
 }

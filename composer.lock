@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ad6f493b8307cd0b55e1b5a5d14fc108",
+    "content-hash": "f8cb73f9ba1a464ef4912c60a25ab5df",
     "packages": [
         {
             "name": "composer/installers",
@@ -104,7 +104,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-04-13 19:46:30"
+            "time": "2016-04-13T19:46:30+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -112,16 +112,54 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "eef7c0520b1e7187cd2cd7540dc997c4c3b0340a"
+                "reference": "9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/eef7c0520b1e7187cd2cd7540dc997c4c3b0340a",
-                "reference": "eef7c0520b1e7187cd2cd7540dc997c4c3b0340a",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a",
+                "reference": "9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a",
                 "shasum": ""
             },
             "require": {
+                "johnpbloch/wordpress-core": "4.7.3",
                 "johnpbloch/wordpress-core-installer": "~0.2",
+                "php": ">=5.3.2"
+            },
+            "type": "package",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "WordPress Community",
+                    "homepage": "http://wordpress.org/about/"
+                }
+            ],
+            "description": "WordPress is web software you can use to create a beautiful website or blog.",
+            "homepage": "http://wordpress.org/",
+            "keywords": [
+                "blog",
+                "cms",
+                "wordpress"
+            ],
+            "time": "2017-03-18T04:47:24+00:00"
+        },
+        {
+            "name": "johnpbloch/wordpress-core",
+            "version": "4.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress-core.git",
+                "reference": "21255f593ac7db93892724321f468c276b15aa65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/21255f593ac7db93892724321f468c276b15aa65",
+                "reference": "21255f593ac7db93892724321f468c276b15aa65",
+                "shasum": ""
+            },
+            "require": {
                 "php": ">=5.3.2"
             },
             "type": "wordpress-core",
@@ -139,9 +177,10 @@
             "homepage": "http://wordpress.org/",
             "keywords": [
                 "blog",
-                "cms"
+                "cms",
+                "wordpress"
             ],
-            "time": "2017-03-06 16:01:58"
+            "time": "2017-03-06T18:43:41+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -189,7 +228,57 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-06-11 15:15:30"
+            "time": "2015-06-11T15:15:30+00:00"
+        },
+        {
+            "name": "lkwdwrd/wp-muplugin-loader",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lkwdwrd/wp-muplugin-loader.git",
+                "reference": "54ec34888dac9ecb852dcf591a0f212570a75709"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lkwdwrd/wp-muplugin-loader/zipball/54ec34888dac9ecb852dcf591a0f212570a75709",
+                "reference": "54ec34888dac9ecb852dcf591a0f212570a75709",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "require-dev": {
+                "10up/wp_mock": "dev-dev",
+                "antecedent/patchwork": "^1.3.4",
+                "codeclimate/php-test-reporter": "^0.3.2",
+                "phpunit/phpunit": "^6.0.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "LkWdwrd\\Composer\\MULoaderPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "LkWdwrd\\Composer\\": "src/lkwdwrd/Composer"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Woodward",
+                    "email": "woodward.lucas@gmail.com"
+                }
+            ],
+            "description": "A drop-in MU Plugin loader for WordPress",
+            "keywords": [
+                "loader",
+                "muplugin",
+                "wordpress"
+            ],
+            "time": "2017-02-26T20:02:19+00:00"
         },
         {
             "name": "oscarotero/env",
@@ -231,7 +320,7 @@
             "keywords": [
                 "env"
             ],
-            "time": "2016-05-08 17:14:32"
+            "time": "2016-05-08T17:14:32+00:00"
         },
         {
             "name": "roots/wp-password-bcrypt",
@@ -288,7 +377,7 @@
             "keywords": [
                 "wordpress wp bcrypt password"
             ],
-            "time": "2016-03-01 16:27:06"
+            "time": "2016-03-01T16:27:06+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -338,7 +427,78 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-09-01 10:05:43"
+            "time": "2016-09-01T10:05:43+00:00"
+        },
+        {
+            "name": "wp-papi/papi",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-papi/papi.git",
+                "reference": "e972a5beee47fa3dbca38d11f67b8407d469eea0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-papi/papi/zipball/e972a5beee47fa3dbca38d11f67b8407d469eea0",
+                "reference": "e972a5beee47fa3dbca38d11f67b8407d469eea0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9 || ^7.0"
+            },
+            "require-dev": {
+                "behat/behat": "^2.5",
+                "frozzare/wp-test-suite": "^1.0",
+                "wp-coding-standards/wpcs": "dev-develop"
+            },
+            "type": "wordpress-muplugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fredrik Forsmo",
+                    "email": "fredrik.forsmo@gmail.com",
+                    "homepage": "https://github.com/frozzare"
+                }
+            ],
+            "description": "WordPress Page Type API with custom fields",
+            "homepage": "https://wp-papi.github.io",
+            "keywords": [
+                "custom fields",
+                "options",
+                "page",
+                "page type",
+                "taxonomy",
+                "wordpress"
+            ],
+            "time": "2017-03-20T15:21:11+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/polylang",
+            "version": "2.1.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/polylang/",
+                "reference": "tags/2.1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/polylang.2.1.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-muplugin",
+            "homepage": "https://wordpress.org/plugins/polylang/"
         }
     ],
     "packages-dev": [
@@ -418,12 +578,14 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2017-03-01 22:17:45"
+            "time": "2017-03-01T22:17:45+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "wp-papi/papi": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
